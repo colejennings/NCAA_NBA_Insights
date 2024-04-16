@@ -23,3 +23,18 @@ The NBA dataset is contained in
 ```sh
 NBA_Matrix
 ```
+To make NBA_Matrix, these steps must be taken:
+```sh
+NBA = pd.read_excel('/Users/thomassniezek/Downloads/nba_team_stats_00_2019_playoffsinc.xlsx')
+#remove non numeric columns
+NBA_num = NBA.drop(['TEAM', 'Team and Season', 'SEASON', 'CONF'], axis = 1)
+#remove unwanted variables
+NBA_Matrix = NBA_num.drop(['GP','W','L','WIN%','MIN','FGM','FGA','3PM','3PA','FTM','FTA','REB','FG%','+/-'],axis=1)
+```
+To make Final_df, these steps must be taken:
+```sh
+
+
+```
+
+## 3. Variable Explanation
