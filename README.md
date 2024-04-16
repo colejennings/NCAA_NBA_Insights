@@ -14,5 +14,12 @@ from sklearn.metrics import accuracy_score
 import xgboost as xgb
 import numpy as np
 ```
-## 2. 
-
+## 2. The Excel Files
+The NCAA dataset is contained in 
+```sh 
+Final_df
+```
+The NBA dataset is contained in 
+```sh
+NBA_Matrix
+```
