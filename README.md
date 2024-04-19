@@ -25,7 +25,7 @@ NBA_Matrix.xlsx
 ```
 
 ## 3. Variable Explanation
-
+### NBA
 | Variable | Definition |
 | ------ | ------ |
 | PTS | Average points scored in a game |
