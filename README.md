@@ -66,8 +66,17 @@ NBA_Matrix.xlsx
 | OpEx | Operating Expenses throughout the season (USD$) |
 | OpRev | Operating Revenue throughout the season (USD$) |
 
-##Feature Importances and Model Accuracies
-
-
+## 4. Feature Importances and Model Accuracies
 
 [Accuracies:featureimportances.pdf](https://github.com/colejennings/NCAA_NBA_Insights/files/15042915/Accuracies.featureimportances.pdf)
+
+## 5. Results
+NCAA model predicts just under 10% more accurately than the NBA model (90.5% and 80.7%, respectively)​
+
+NBA feature importances are more evenly distributed compared to the NCAA​
+
+Many statistics may be captured by umbrella statistics ADJOE and ADJDE (only available for NCAA)​
+
+NBA playoff prediction may be more difficult because there is less of a gap in skill compared to NCAA as there are over 350 NCAA Men's Basketball teams compared to the 32 NBA teams​
+
+​
