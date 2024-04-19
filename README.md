@@ -64,5 +64,10 @@ NBA_Matrix.xlsx
 | CONF_BE | Big East Conference Dummy ( 1 = belongs to ACC, 0 = other conference) |
 | CONF_SEC | SEC Conference Dummy ( 1 = belongs to SEC, 0 = other conference) |
 | OpEx | Operating Expenses throughout the season (USD$) |
-| OpRev | Operating Revenue throughout the season (USD$) |![image](https://github.com/colejennings/NCAA_NBA_Insights/assets/124570541/b2702b95-627d-466b-82b6-2c71c5fce3a1)
+| OpRev | Operating Revenue throughout the season (USD$) |
 
+##Feature Importances and Model Accuracies
+
+
+
+[Accuracies:featureimportances.pdf](https://github.com/colejennings/NCAA_NBA_Insights/files/15042915/Accuracies.featureimportances.pdf)
