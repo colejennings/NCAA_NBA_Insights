@@ -17,24 +17,28 @@ import numpy as np
 ## 2. The Excel Files
 The NCAA dataset is contained in 
 ```sh 
-Final_df
+Final_NCAA.xlsx
 ```
 The NBA dataset is contained in 
 ```sh
-NBA_Matrix
-```
-To make NBA_Matrix, these steps must be taken:
-```sh
-NBA = pd.read_excel('/Users/thomassniezek/Downloads/nba_team_stats_00_2019_playoffsinc.xlsx')
-#remove non numeric columns
-NBA_num = NBA.drop(['TEAM', 'Team and Season', 'SEASON', 'CONF'], axis = 1)
-#remove unwanted variables
-NBA_Matrix = NBA_num.drop(['GP','W','L','WIN%','MIN','FGM','FGA','3PM','3PA','FTM','FTA','REB','FG%','+/-'],axis=1)
-```
-To make Final_df, these steps must be taken:
-```sh
-
-
+NBA_Matrix.xlsx
 ```
 
 ## 3. Variable Explanation
+
+| Variable | Definition |
+| ------ | ------ |
+| PTS | Average points scored in a game |
+| 3P% | Three Point Percentage |
+| FT% | Free Throw Percentage |
+| OREB | Offensive Rebounds |
+| DREB | Defensive Rebounds |
+| AST | Assists |
+| TOV | Turnovers |
+| STL | Steals |
+| BLK | Blocks |
+| BLKA | Blocks Agianst |
+| PF | Personal Fouls |
+| PFD | Personal Fouls Drawn |
+| Made_Playoffs | If the team made the playoffs or not (Binary) |
+| Conf_West | If the team belonged to the western conference (Binary) |
