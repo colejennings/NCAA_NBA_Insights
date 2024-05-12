@@ -17,24 +17,66 @@ import numpy as np
 ## 2. The Excel Files
 The NCAA dataset is contained in 
 ```sh 
-Final_df
+Final_NCAA.xlsx
 ```
 The NBA dataset is contained in 
 ```sh
-NBA_Matrix
-```
-To make NBA_Matrix, these steps must be taken:
-```sh
-NBA = pd.read_excel('/Users/thomassniezek/Downloads/nba_team_stats_00_2019_playoffsinc.xlsx')
-#remove non numeric columns
-NBA_num = NBA.drop(['TEAM', 'Team and Season', 'SEASON', 'CONF'], axis = 1)
-#remove unwanted variables
-NBA_Matrix = NBA_num.drop(['GP','W','L','WIN%','MIN','FGM','FGA','3PM','3PA','FTM','FTA','REB','FG%','+/-'],axis=1)
-```
-To make Final_df, these steps must be taken:
-```sh
-
-
+NBA_Matrix.xlsx
 ```
 
 ## 3. Variable Explanation
+### NBA
+| Variable | Definition |
+| ------ | ------ |
+| PTS | Average points scored in a game |
+| 3P% | Three Point Percentage |
+| FT% | Free Throw Percentage |
+| OREB | Offensive Rebounds |
+| DREB | Defensive Rebounds |
+| AST | Assists |
+| TOV | Turnovers |
+| STL | Steals |
+| BLK | Blocks |
+| BLKA | Blocks Agianst |
+| PF | Personal Fouls |
+| PFD | Personal Fouls Drawn |
+| Made_Playoffs | If the team made the playoffs or not (Binary) |
+| Conf_West | If the team belonged to the western conference (Binary) |
+
+### NCAA
+| Variable | Definition |
+| ------ | ------ |
+| TEAM | Team and season for which the variables correspond to |
+| ADJOE | Points scored/100 offensive possessions |
+| ADJDE | points allowed/100 defensive possessions |
+| EFG_O | Effective field goal % (offense) |
+| EFG_D | Effective field goal % (defense) |
+| TOR | Turnover rate (on offense) |
+| TORD | Turnover rate (on defense) |
+| ORB | Offensive rebounding rate |
+| DRB | Defensive rebounding rate |
+| FTR | Free throw rate (offensive) |
+| FTRD | Free throw rate (defensive) |
+| playoffs_binary | Playoffs binary variable (1 = made playoffs, 0 = did not make playoffs) |
+| CONF_ACC | ACC Conference Dummy ( 1 = belongs to ACC, 0 = other conference) |
+| CONF_B10 | Big 10 Conference Dummy ( 1 = belongs to Big 10, 0 = other conference) |
+| CONF_B12 | Big 12 Conference Dummy ( 1 = belongs to Big 12, 0 = other conference) |
+| CONF_BE | Big East Conference Dummy ( 1 = belongs to ACC, 0 = other conference) |
+| CONF_SEC | SEC Conference Dummy ( 1 = belongs to SEC, 0 = other conference) |
+| OpEx | Operating Expenses throughout the season (USD$) |
+| OpRev | Operating Revenue throughout the season (USD$) |
+
+## 4. Feature Importances and Model Accuracies
+
+[Accuracies:featureimportances.pdf](https://github.com/colejennings/NCAA_NBA_Insights/files/15042915/Accuracies.featureimportances.pdf)
+
+## 5. Results
+NCAA model predicts just under 10% more accurately than the NBA model (90.5% and 80.7%, respectively)​
+
+NBA feature importances are more evenly distributed compared to the NCAA​
+
+Many statistics may be captured by umbrella statistics ADJOE and ADJDE (only available for NCAA)​
+
+NBA playoff prediction may be more difficult because there is less of a gap in skill compared to NCAA as there are over 350 NCAA Men's Basketball teams compared to the 32 NBA teams​
+
+​
